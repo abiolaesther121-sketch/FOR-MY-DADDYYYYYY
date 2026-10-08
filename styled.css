@@ -1,0 +1,364 @@
+/*=========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background: #100b0d;
+    color: #f8eeee;
+}
+
+section {
+    min-height: 100vh;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.small-text {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c9a5ad;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px 8%;
+    position: relative;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(16, 11, 13, 0.98),
+            rgba(16, 11, 13, 0.2)
+        ),
+        url("images/photo1.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: clamp(48px, 9vw, 100px);
+    font-weight: normal;
+    line-height: 0.95;
+    margin-bottom: 30px;
+}
+
+.intro {
+    max-width: 480px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #dfd0d3;
+    margin-bottom: 35px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 28px;
+    border: 1px solid #c9a5ad;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    background: white;
+    color: #100b0d;
+}
+
+
+/* =========================
+   PHOTO SECTIONS
+========================= */
+
+.photo-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
+    background: #171013;
+}
+
+.photo-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.photo-container img {
+    height: 650px;
+    object-fit: cover;
+}
+
+.photo-text {
+    max-width: 450px;
+}
+
+.photo-text h2 {
+    font-size: clamp(45px, 7vw, 80px);
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.photo-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #d9c9cd;
+}
+
+
+/* =========================
+   LETTER
+========================= */
+
+.letter {
+    background: #f2e9e8;
+    color: #24171b;
+    display: flex;
+    align-items: center;
+    padding: 100px 8%;
+}
+
+.letter-container {
+    max-width: 750px;
+    margin: auto;
+}
+
+.letter .small-text {
+    color: #8c626d;
+}
+
+.letter h2 {
+    font-size: clamp(42px, 7vw, 75px);
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+.letter p {
+    font-size: 19px;
+    line-height: 2;
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   APPRECIATION
+========================= */
+
+.appreciation {
+    min-height: auto;
+    padding: 130px 8%;
+    background: #100b0d;
+}
+
+.appreciation-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.appreciation h2 {
+    font-size: clamp(40px, 6vw, 70px);
+    font-weight: normal;
+    margin-bottom: 70px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    border-top: 1px solid #594149;
+    padding-top: 25px;
+}
+
+.card span {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #b9909a;
+}
+
+.card h3 {
+    font-size: 25px;
+    font-weight: normal;
+    margin: 35px 0 18px;
+}
+
+.card p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #bdaeb2;
+}
+
+
+/* =========================
+   SECOND PHOTO
+========================= */
+
+.second-photo {
+    background: #1a1114;
+}
+
+.second-photo .photo-container {
+    grid-template-columns: 1.2fr 0.8fr;
+}
+
+.second-photo img {
+    height: 700px;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 8%;
+
+    background:
+        linear-gradient(
+            rgba(16, 11, 13, 0.65),
+            rgba(16, 11, 13, 0.95)
+        ),
+        url("images/photo2.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.final-content {
+    max-width: 700px;
+}
+
+.final h2 {
+    font-size: clamp(48px, 8vw, 90px);
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 35px;
+}
+
+.final-content > p:not(.small-text):not(.final-line):not(.signature) {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #dfd0d3;
+}
+
+.final-line {
+    font-size: 25px;
+    margin-top: 45px;
+}
+
+.signature {
+    margin-top: 25px;
+    color: #c9a5ad;
+    font-style: italic;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 40px 25px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .photo-section {
+        padding: 70px 25px;
+    }
+
+    .photo-container,
+    .second-photo .photo-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .photo-container img,
+    .second-photo img {
+        height: 500px;
+    }
+
+    .photo-text h2 {
+        font-size: 55px;
+    }
+
+    .letter {
+        padding: 80px 25px;
+    }
+
+    .letter h2 {
+        margin-bottom: 35px;
+    }
+
+    .letter p {
+        font-size: 17px;
+        line-height: 1.9;
+    }
+
+    .appreciation {
+        padding: 90px 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .final {
+        padding: 60px 25px;
+    }
+
+}
